@@ -41,7 +41,7 @@ class LocalizationController extends GetxController  implements GetxService{
     _locale = const Locale('pt', 'BR');
     _isLtr = !intl.Bidi.isRtlLanguage(_locale.languageCode);
     _selectIndex = 0;
-    await saveLanguage(_locale);
+    saveLanguage(_locale);
     update();
   }
 
